@@ -1,6 +1,16 @@
 
 
 $(document).ready(function() {
+	themesong();
+	$('.sf-logo').fadeIn(3500);
+	$('.sf-logo').fadeOut(1000);
+      $('.brought-by').fadeIn(8000)
+       $('.brought-by').fadeOut(1000)
+         $('.jquery-logo').fadeIn(9000)
+           $('.jquery-logo').fadeOut(1000)
+             $('.how-to').fadeIn(1000);
+   
+
 	  $('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -31,6 +41,12 @@ $(document).ready(function() {
 });
 
 
+function themesong(){
+	$('#theme-song')[0].volume = 0.3;
+	$('#theme-song')[0].play();
+
+}
+
 
 
 function playHadouken(){
@@ -39,7 +55,6 @@ function playHadouken(){
 	$('#hadouken-sound') [0].play();
 
 }
-
 
 
 $(document).keydown(function(e) {
@@ -56,4 +71,5 @@ $(document).keydown(function(e) {
 
     }
   });
+
 
